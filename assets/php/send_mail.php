@@ -50,10 +50,10 @@ try {
         $mail->Port       = 587;
         $mail->SMTPSecure = "tls";
         $mail->SMTPAuth   = true;
-        $mail->Username   = "support@americaryugakucenter.com";
+        $mail->Username   = "help@elpatronit.com";
         $mail->Password   = getenv("EMAIL_PASSWORD");
-        $mail->SetFrom("support@americaryugakucenter.com", "FromEmail");
-        $mail->AddAddress("sales@americaryugakucenter.com", "ToEmail");
+        $mail->SetFrom("help@elpatronit.com", "FromEmail");
+        $mail->AddAddress("info@equilibriumict.com", "ToEmail");
         $mail->IsHTML(true);
         $mail->Subject    = $subject;
         $mail->MsgHTML($html_body);
