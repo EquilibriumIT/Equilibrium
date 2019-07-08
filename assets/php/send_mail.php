@@ -18,7 +18,7 @@ try {
         $message = $_POST['message'];
         $company = $_POST['company'];
         $phone = $_POST['phone'];
-        $subject = $name . " contacting you via Equilibriumict.com";
+        $subject = $name . " contacting you via Elpatronit.com";
 
 
         $error_message = "";
@@ -53,7 +53,7 @@ try {
         $mail->Username   = "help@elpatronit.com";
         $mail->Password   = getenv("EMAIL_PASSWORD");
         $mail->SetFrom("help@elpatronit.com", "FromEmail");
-        $mail->AddAddress("help@elpatronit.com", "ToEmail");
+        $mail->AddAddress("info@equilibriumict.com", "ToEmail");
         $mail->IsHTML(true);
         $mail->Subject    = $subject;
         $mail->MsgHTML($html_body);
@@ -61,7 +61,7 @@ try {
             $error_message .= 'Mailer Error: ' . $mail->ErrorInfo;
             died($error_message);
         }
-        header("Location:http://equilibriumict.com/#contact_success");
+        header("Location:http://elpatronit.com/#contact_success");
         exit();
         }
     else{
