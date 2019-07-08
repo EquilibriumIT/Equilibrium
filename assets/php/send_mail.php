@@ -18,7 +18,7 @@ try {
         $message = $_POST['message'];
         $company = $_POST['company'];
         $phone = $_POST['phone'];
-        $subject = $name . " contacting you via Equilibriumit.com";
+        $subject = $name . " contacting you via Elpatronit.com";
 
 
         $error_message = "";
@@ -61,7 +61,7 @@ try {
             $error_message .= 'Mailer Error: ' . $mail->ErrorInfo;
             died($error_message);
         }
-        header("Location:http://equilibriumit.com/#contact_success");
+        header("Location:http://elpatronit.com/#contact_success");
         exit();
         }
     else{
