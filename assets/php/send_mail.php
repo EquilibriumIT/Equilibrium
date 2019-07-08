@@ -53,7 +53,7 @@ try {
         $mail->Username   = "help@elpatronit.com";
         $mail->Password   = getenv("EMAIL_PASSWORD");
         $mail->SetFrom("help@elpatronit.com", "FromEmail");
-        $mail->AddAddress("info@equilibriumict.com", "ToEmail");
+        $mail->AddAddress("help@elpatronit.com", "ToEmail");
         $mail->IsHTML(true);
         $mail->Subject    = $subject;
         $mail->MsgHTML($html_body);
