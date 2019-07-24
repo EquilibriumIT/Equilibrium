@@ -47,7 +47,7 @@ try {
         $mail = new PHPMailer(true);
         $mail->isSMTP();
         $mail->Host       = "smtp.office365.com";
-        $mail->Port       = 587;
+        $mail->Port       = "587";
         $mail->SMTPSecure = "tls";
         $mail->SMTPAuth   = true;
         $mail->Username   = "help@elpatronit.com";
