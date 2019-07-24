@@ -18,7 +18,7 @@ try {
         $message = $_POST['message'];
         $company = $_POST['company'];
         $phone = $_POST['phone'];
-        $subject = $name . " contacting you via Elpatronit.com";
+        $subject = $name . " contacting you via equilibriumict.com";
 
 
         $error_message = "";
@@ -47,7 +47,7 @@ try {
         $mail = new PHPMailer(true);
         $mail->isSMTP();
         $mail->Host       = "smtp.office365.com";
-        $mail->Port       = 465;
+        $mail->Port       = 587;
         $mail->SMTPSecure = "tls";
         $mail->SMTPAuth   = true;
         $mail->Username   = "help@elpatronit.com";
@@ -61,7 +61,7 @@ try {
             $error_message .= 'Mailer Error: ' . $mail->ErrorInfo;
             died($error_message);
         }
-        header("Location:http://elpatronit.com/#contact_success");
+        header("Location:http://equilibriumict.com/#contact_success");
         exit();
         }
     else{
