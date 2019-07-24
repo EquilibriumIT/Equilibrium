@@ -61,7 +61,7 @@ try {
             $error_message .= 'Mailer Error: ' . $mail->ErrorInfo;
             died($error_message);
         }
-        header("Location:http://equilibriumict.com/#contact_success");
+        header("Location:http://www.equilibriumict.com/#contact_success");
         exit();
         }
     else{
