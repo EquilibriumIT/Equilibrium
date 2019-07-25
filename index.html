@@ -161,56 +161,54 @@ Technology Consultancy</h3>
 	</div>
 </section>
 <!-- //features -->
-	<!-- contact -->
-	<section class="contact py-5" id="contact">
-		<form method="post" action="assets/php/send_mail.php">
-			<div class="container py-sm-4">
-				<div class="row contact-top">
-					<div class="col-lg col-md-6 contact-grid-three">
-						<div class="contact_grid_right">
-								<div class="contact_left_grid">
-									<div class="con-left">
-										<div class="form-group">
-											<input class="form-control" type="text" name="Name" placeholder="Name" required="">
-										</div>
-										<div class="form-group">
-											<input class="form-control" type="email" name="Email" placeholder="Email" required="">
-										</div>
-										<div class="form-group">
-											<textarea id="textarea" placeholder="Message" required=""></textarea>
-										</div>
-										<div class="sub-honey mx-auto mt-3">
-											<button class="form-control btn" type="submit">Submit</button>
-										</div>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 contact-grid-wthree foot-top mt-md-0 mt-5">
-						<h3 class="contact-title mb-sm-4 mb-2">Contact information</h3>
-						<div class="contact-info">
-							<p class="mb-4">Please feel free to contact us regarding any enquiries</p>
-							<div class="contact-style-w3ls">
-								<p><span class="fa fa-map-marker"></span><strong>Location :</strong> 406 Broadway #380, Santa Monica, CA, 90401</p>
-							</div>
-							<div class="contact-style-w3ls my-2">
-								<p><span class="fa fa-envelope-open"></span><strong>Email :</strong> <a href="mailto:info@equilibriumict.com">example@mail.com</a></p>
-							</div>
-							<div class="contact-style-w3ls">
-								<p><span class="fa fa-phone"></span><strong>Phone :</strong> +1 562 243 2822</p>
-							</div>
-						</div>
-						<div class="row mt-lg-5 mt-md-4 mt-3">
-							<div class="col-lg-6 col-md-6 col-sm-6 address_mail_footer_grids">
-								<iframe src="https://maps.google.com/maps?q=406%20Broadway%2C%20%23380%2C%20Santa%20Monica%2C%2090401%20CA.&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-	</section>
-	<!-- //contact -->
+    <!-- Contact -->
+    <article id="contact">
+        <h2 class="major">Contact Us</h2>
+        <form method="post" action="assets/php/send_mail.php">
+            <div class="field half first">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required/>
+            </div>
+            <div class="field half">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" required/>
+            </div>
+            <div class="field half first">
+                <label for="name">Company</label>
+                <input type="text" name="company" id="Company" />
+                <input type="hidden" name="gotcha" id="gotcha" />
+            </div>
+            <div class="field half">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone" />
+            </div>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="4"></textarea>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Send Message" class="special" /></li>
+                <li><input type="reset" value="Reset" /></li>
+            </ul>
+        </form>
+        <ul class="icons">
+            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+        </ul>
+        <span id="contact_address" class="address">
+									<strong>El Patron IT</strong>
+									<br>Los Angeles, CA 90053
+									<br><a href="tel://1-562-243-2822">(562) 243-2822</a>
+								</span>
+    </article>
+
+    <!-- Success Contact -->
+    <article id="contact_success">
+        <h2 class="major">Thank You</h2>
+        <p>We have received your request and will be in touch with you very soon.</p>
+    </article>
 	<!-- copyright -->
     <div class="cpy-right-sec-w3ls">
         <div class="container">
