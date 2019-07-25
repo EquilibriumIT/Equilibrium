@@ -20,7 +20,6 @@ try {
         $phone = $_POST['phone'];
         $subject = $name . " contacting you via equilibriumict.com";
 
-
         $error_message = ""; 
         $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}
         $/'; $string_exp = "/^[A-Za-z .'-]+$/";   
