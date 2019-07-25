@@ -64,8 +64,6 @@ try {
         header("Location:http://www.equilibriumict.com/#contact_success");
         exit();
         }
-    else{
-        echo "No email found in POST" . $_POST;
     }
 }
 catch (Exception $e)
