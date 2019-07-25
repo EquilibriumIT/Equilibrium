@@ -21,6 +21,13 @@ try {
         $subject = $name . " contacting you via equilibriumict.com";
 
 
+        $error_message = ""; 
+        $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}
+        $/'; $string_exp = "/^[A-Za-z .'-]+$/";   
+
+
+        if(!array_key_exists('gotcha', $_POST)) { 
+        died("Who do you think you are trying to abuse us.");
         }
 
         if(!preg_match($email_exp, $email)) {
